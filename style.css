@@ -1,0 +1,113 @@
+body{height: 100% ; display: flex}
+main{
+    margin: 0 auto;
+}
+#square{
+    background-color: brown;
+    width:  50px;
+    height:  50px;
+    animation: rotation 3s infinite linear;
+     margin: 0 auto;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(359deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+ button{
+
+     height: 50px;
+     width: 150px;
+ }
+#btns{
+    height: 150px;
+    display: flex;
+    align-content: center;
+    justify-content:  center;
+
+}
+#btns>button{margin-right: 20px}
+#bt1:hover{
+    box-shadow: 0  15px 0 -11px rgba(0, 0, 0, 0.5);
+    /*transform: scale(1.1);*/
+    transition: all 1s;
+    margin-top: 5px;
+}
+ #bt2{
+     background-color: black;
+     color: white;
+     border:none;
+ }
+ #bt2:hover{
+     background-color: #3fcb6f;
+ }
+ #btns2>button{
+     transition-property: color, background-color;
+     transition-duration: 0.6s;
+     transition-timing-function: linear;
+ }
+ #bt3{
+     background-color: pink;
+     color: #ff586e;
+ }
+ #bt3:hover{
+     background-color: green;
+     color: white;
+ }
+#bt4{
+    background-color: #acffa0;
+    color: #79676a;
+}
+#bt4:hover{
+    background-color: #4e83c5;
+    color: #501313;
+}
+#bt5{
+    background-color: #ff0033;
+    color: #f1c21c;
+}
+#bt5:hover{
+    background-color: #a308f6;
+    color: #47f510;
+}
+#bt6{
+    background-color: #05143b;
+    color: #fffcfc;
+}
+#bt6:hover{
+    background-color: #e30bf5;
+    color: #694949;
+}
+#clock{
+
+    width: 500px;
+    height: 500px;
+    background-image: url("https://thumbs.dreamstime.com/z/clock-dial-clock-dial-round-clock-numbers-no-minutes-141155031.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.arrow{
+    width: 5px;
+    height: 180px;
+
+    background-color: black;
+    transform-origin:bottom;
+    animation: arrow-rotate 60s infinite linear;
+    position: absolute;
+    top:calc(25% - 60px);
+    bottom:calc(25% - 92px);
+    left: 50%;
+
+}
+@keyframes arrow-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
